@@ -1,0 +1,17 @@
+name: na_system_b
+
+services:
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+    container_name: na_system_eppy
+    ports:
+      - "76:80"
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: na_system_eppy
+    ports:
+      - "77:80"
