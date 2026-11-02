@@ -14,4 +14,4 @@ services:
       dockerfile: Dockerfile
     container_name: na_client_eppy
     ports:
-      - "77:80"
+      - "55:80"
